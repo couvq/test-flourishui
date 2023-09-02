@@ -7,6 +7,7 @@ const App = () => {
     <>
       <Typography>Hello world</Typography>
       <TestComponent />
+      <a href="https://amazon.com" target="_blank">hello world</a>
     </>
   );
 };
