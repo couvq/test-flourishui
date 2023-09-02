@@ -19,5 +19,5 @@ jobs:
           uses: reggionick/s3-deploy@v3
           with:
             folder: dist
-            bucket: test-flourish-ui
+            bucket: test-flourishui
             bucket-region: us-east-2
