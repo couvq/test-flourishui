@@ -18,10 +18,5 @@ jobs:
             aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws-region: us-east-2
-
-        - name: Deploy to S3
-          uses: reggionick/s3-deploy@v3
-          with:
-            folder: dist
-            bucket: test-flourishui
-            bucket-region: us-east-2
+        - name: Deploy to s3
+          run: aws s3 sync ./public/ s3://test-flourishui --delete
